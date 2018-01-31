@@ -8,12 +8,11 @@
 import AVFoundation
 import UIKit
 
+/*
 final class PlayerService: NSObject, AVAudioPlayerDelegate {
     let cacheService: CacheService
     var player: AVAudioPlayer!
     
-    /// Signal for the current playing song. Initially there is no playing song yet
-    let currentSongSignal = Binding<Song?>(value: nil)
     
     init(cacheService: CacheService) {
         self.cacheService = cacheService
@@ -105,4 +104,4 @@ final class PlayerService: NSObject, AVAudioPlayerDelegate {
         print(flag)
     }
 }
-
+*/

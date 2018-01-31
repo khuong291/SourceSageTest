@@ -15,16 +15,15 @@
 		1B1E4ABF20221D0400788242 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AAE20221D0300788242 /* Binding.swift */; };
 		1B1E4AC020221D0400788242 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AAF20221D0300788242 /* Constraint.swift */; };
 		1B1E4AC120221D0400788242 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AB220221D0300788242 /* CacheService.swift */; };
-		1B1E4AC220221D0400788242 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AB320221D0300788242 /* PlayerService.swift */; };
-		1B1E4AC320221D0400788242 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AB420221D0300788242 /* Result.swift */; };
 		1B1E4AC420221D0400788242 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AB520221D0300788242 /* NetworkService.swift */; };
 		1B1E4AC520221D0400788242 /* ImageFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AB620221D0300788242 /* ImageFetchingService.swift */; };
-		1B1E4AC620221D0400788242 /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AB920221D0400788242 /* ContentTableViewController.swift */; };
 		1B1E4AC820221DC200788242 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AC720221DC200788242 /* ImageCell.swift */; };
 		1B1E4ACA20221E5600788242 /* WebCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AC920221E5600788242 /* WebCell.swift */; };
 		1B1E4ACE20221EE000788242 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4ACD20221EE000788242 /* VideoCell.swift */; };
 		1B1E4AD02022239600788242 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4ACF2022239600788242 /* HomeController.swift */; };
 		1B1E4AD2202223CC00788242 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AD1202223CC00788242 /* GifCell.swift */; };
+		1B1E4AD420222A3000788242 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AD320222A3000788242 /* URL+Extension.swift */; };
+		1B1E4AD620222E9F00788242 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E4AD520222E9F00788242 /* PlayerService.swift */; };
 		1B26C298201F70A200EB86DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26C297201F70A200EB86DA /* AppDelegate.swift */; };
 		1B26C29D201F70A200EB86DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B26C29B201F70A200EB86DA /* Main.storyboard */; };
 		1B26C29F201F70A200EB86DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B26C29E201F70A200EB86DA /* Assets.xcassets */; };
@@ -59,16 +58,15 @@
 		1B1E4AAE20221D0300788242 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		1B1E4AAF20221D0300788242 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		1B1E4AB220221D0300788242 /* CacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
-		1B1E4AB320221D0300788242 /* PlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
-		1B1E4AB420221D0300788242 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		1B1E4AB520221D0300788242 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1B1E4AB620221D0300788242 /* ImageFetchingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetchingService.swift; sourceTree = "<group>"; };
-		1B1E4AB920221D0400788242 /* ContentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
 		1B1E4AC720221DC200788242 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		1B1E4AC920221E5600788242 /* WebCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCell.swift; sourceTree = "<group>"; };
 		1B1E4ACD20221EE000788242 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		1B1E4ACF2022239600788242 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1B1E4AD1202223CC00788242 /* GifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
+		1B1E4AD320222A3000788242 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		1B1E4AD520222E9F00788242 /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
 		1B26C294201F70A200EB86DA /* SourceSageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceSageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B26C297201F70A200EB86DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B26C29C201F70A200EB86DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +125,7 @@
 				1B1E4AAA20221D0300788242 /* String+Extension.swift */,
 				1B1E4AAB20221D0300788242 /* TimeInterval+Extension.swift */,
 				1B1E4AAC20221D0300788242 /* UITableView+Extension.swift */,
+				1B1E4AD320222A3000788242 /* URL+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -150,9 +149,8 @@
 		1B1E4AB120221D0300788242 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1B1E4AD520222E9F00788242 /* PlayerService.swift */,
 				1B1E4AB220221D0300788242 /* CacheService.swift */,
-				1B1E4AB320221D0300788242 /* PlayerService.swift */,
-				1B1E4AB420221D0300788242 /* Result.swift */,
 				1B1E4AB520221D0300788242 /* NetworkService.swift */,
 				1B1E4AB620221D0300788242 /* ImageFetchingService.swift */,
 			);
@@ -170,7 +168,6 @@
 		1B1E4AB820221D0400788242 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1B1E4AB920221D0400788242 /* ContentTableViewController.swift */,
 				1B1E4AC720221DC200788242 /* ImageCell.swift */,
 				1B1E4AD1202223CC00788242 /* GifCell.swift */,
 				1B1E4AC920221E5600788242 /* WebCell.swift */,
@@ -372,16 +369,15 @@
 				1B1E4ABD20221D0400788242 /* TimeInterval+Extension.swift in Sources */,
 				1B1E4ABF20221D0400788242 /* Binding.swift in Sources */,
 				1B1E4AC520221D0400788242 /* ImageFetchingService.swift in Sources */,
+				1B1E4AD620222E9F00788242 /* PlayerService.swift in Sources */,
 				1B1E4ACA20221E5600788242 /* WebCell.swift in Sources */,
 				1B1E4ABA20221D0400788242 /* UIImageView+Extension.swift in Sources */,
-				1B1E4AC220221D0400788242 /* PlayerService.swift in Sources */,
-				1B1E4AC620221D0400788242 /* ContentTableViewController.swift in Sources */,
 				1B26C298201F70A200EB86DA /* AppDelegate.swift in Sources */,
 				1B1E4ACE20221EE000788242 /* VideoCell.swift in Sources */,
 				1B1E4AC120221D0400788242 /* CacheService.swift in Sources */,
+				1B1E4AD420222A3000788242 /* URL+Extension.swift in Sources */,
 				1B1E4ABE20221D0400788242 /* UITableView+Extension.swift in Sources */,
 				1B1E4AC420221D0400788242 /* NetworkService.swift in Sources */,
-				1B1E4AC320221D0400788242 /* Result.swift in Sources */,
 				1B1E4AC820221DC200788242 /* ImageCell.swift in Sources */,
 				1B1E4AD02022239600788242 /* HomeController.swift in Sources */,
 				1B1E4AD2202223CC00788242 /* GifCell.swift in Sources */,

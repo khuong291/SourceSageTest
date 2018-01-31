@@ -18,6 +18,7 @@ final class ImageCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Add to contentView
+        contentImageView.contentMode = .scaleAspectFit
         contentView.addSubview(contentImageView)
     }
     
@@ -32,6 +33,6 @@ final class ImageCell: UITableViewCell {
     }
     
     func configure(url: URL) {
-        
+        contentImageView.loadImage(url: url)
     }
 }

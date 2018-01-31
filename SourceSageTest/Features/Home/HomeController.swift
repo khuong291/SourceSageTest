@@ -9,9 +9,16 @@
 import Foundation
 import UIKit
 
+enum URLType {
+    case image
+    case gif
+    case web
+    case video
+}
+
 final class HomeController: UITableViewController {
     
-    private let cellHeight: CGFloat = 80
+    private let cellHeight: CGFloat = 200
     private let networkService = NetworkService()
     private var urls: [URL] = []
     
@@ -36,7 +43,22 @@ final class HomeController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeue(type: WebCell.self, indexPath: indexPath)
-        return cell
+        let url = urls[indexPath.row]
+        
+        switch url.type() {
+        case .image:
+            let cell = tableView.dequeue(type: ImageCell.self, indexPath: indexPath)
+            cell.configure(url: url)
+            return cell
+        case .gif:
+            let cell = tableView.dequeue(type: GifCell.self, indexPath: indexPath)
+            return cell
+        case .video:
+            let cell = tableView.dequeue(type: VideoCell.self, indexPath: indexPath)
+            return cell
+        case .web:
+            let cell = tableView.dequeue(type: WebCell.self, indexPath: indexPath)
+            return cell
+        }
     }
 }
