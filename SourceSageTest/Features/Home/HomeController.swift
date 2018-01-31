@@ -52,12 +52,14 @@ final class HomeController: UITableViewController {
             return cell
         case .gif:
             let cell = tableView.dequeue(type: GifCell.self, indexPath: indexPath)
+            cell.configure(url: url)
             return cell
         case .video:
             let cell = tableView.dequeue(type: VideoCell.self, indexPath: indexPath)
             return cell
         case .web:
             let cell = tableView.dequeue(type: WebCell.self, indexPath: indexPath)
+            cell.configure(url: url)
             return cell
         }
     }

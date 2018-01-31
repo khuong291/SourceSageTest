@@ -10,15 +10,15 @@ import Foundation
 import UIKit
 
 final class ImageCell: UITableViewCell {
-    // UITableView already has a property called imageView
-    // So we need to call it diferrently
-    let contentImageView = UIImageView()
+    /// UITableView already has a property called imageView, so we need to call it diferrently
+    private let contentImageView = UIImageView()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Add to contentView
-        contentImageView.contentMode = .scaleAspectFit
+        contentImageView.contentMode = .scaleAspectFill
+        contentImageView.clipsToBounds = true
         contentView.addSubview(contentImageView)
     }
     
