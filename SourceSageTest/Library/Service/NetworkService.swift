@@ -12,21 +12,8 @@ class NetworkService {
         let urls = [
             "http://afamilycdn.com/thumb_w/650/2017/mytam2-1494555293056.jpg",
             "http://techslides.com/demos/sample-videos/small.mp4",
-            "https://www.sourcesage.co",
-            "http://afamilycdn.com/thumb_w/650/2017/mytam2-1494555293056.jpg",
-            "http://techslides.com/demos/sample-videos/small.mp4",
-            "https://www.sourcesage.co",
-            "http://afamilycdn.com/thumb_w/650/2017/mytam2-1494555293056.jpg",
-            "http://techslides.com/demos/sample-videos/small.mp4",
-            "https://www.sourcesage.co",
-            "http://afamilycdn.com/thumb_w/650/2017/mytam2-1494555293056.jpg",
-            "http://techslides.com/demos/sample-videos/small.mp4",
-            "https://www.sourcesage.co",
-            "http://afamilycdn.com/thumb_w/650/2017/mytam2-1494555293056.jpg",
-            "http://techslides.com/demos/sample-videos/small.mp4",
             "https://www.sourcesage.co"
         ]
-        
         completion(urls.flatMap({ URL(string: $0) }))
     }
 }

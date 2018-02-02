@@ -24,6 +24,19 @@ extension UIImageView {
     }
     
     
+    /// Use for load image from an url and notify that image is loaded or not
+    ///
+    /// - Parameters:
+    ///   - url: url for download
+    ///   - completionHandler: notify that image is loaded or not
+    func loadImage(url: URL, completionHandler: @escaping (Bool) -> Void) {
+        self.imageService = ImageFetchingService(cacheService: CacheService())
+        self.imageService?.fetch(url: url, completion: { [weak self] image in
+            self?.image = image
+            completionHandler(image != nil ? true : false)
+        })
+    }
+    
     /// Use for store property
     private var imageService: ImageFetchingService? {
         get {

@@ -12,6 +12,8 @@ import UIKit
 final class ImageCell: UITableViewCell {
     /// UITableView already has a property called imageView, so we need to call it diferrently
     private let contentImageView = UIImageView()
+    /// Make user know that the content is on-loading
+    fileprivate let indicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -20,6 +22,8 @@ final class ImageCell: UITableViewCell {
         contentImageView.contentMode = .scaleAspectFill
         contentImageView.clipsToBounds = true
         contentView.addSubview(contentImageView)
+        contentView.addSubview(indicatorView)
+        indicatorView.startAnimating()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,9 +34,12 @@ final class ImageCell: UITableViewCell {
         super.layoutSubviews()
         
         contentImageView.frame = contentView.bounds
+        indicatorView.frame = contentView.bounds
     }
     
     func configure(url: URL) {
-        contentImageView.loadImage(url: url)
+        contentImageView.loadImage(url: url) { [weak self] _ in
+            self?.indicatorView.stopAnimating()
+        }
     }
 }
