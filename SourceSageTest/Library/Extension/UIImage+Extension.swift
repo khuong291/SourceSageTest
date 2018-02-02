@@ -8,20 +8,6 @@
 
 import UIKit
 import ImageIO
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
-fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-    switch (lhs, rhs) {
-    case let (l?, r?):
-        return l < r
-    case (nil, _?):
-        return true
-    default:
-        return false
-    }
-}
-
-
 
 extension UIImage {
     static func gifImageWithData(_ data: Data) -> UIImage? {
@@ -82,7 +68,7 @@ extension UIImage {
             }
         }
         
-        if a < b {
+        if a! < b! {
             let c = a
             a = b
             b = c

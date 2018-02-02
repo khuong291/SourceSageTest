@@ -56,6 +56,7 @@ final class HomeController: UITableViewController {
             return cell
         case .video:
             let cell = tableView.dequeue(type: VideoCell.self, indexPath: indexPath)
+            cell.configure(url: url)
             return cell
         case .web:
             let cell = tableView.dequeue(type: WebCell.self, indexPath: indexPath)
